@@ -1,10 +1,13 @@
+// Variabili
+@use './_vars.scss' as *;
+
 .card {
     width: 400px;
-    background-color: #fff;
+    background-color: $white;
     border-radius: 20px;
     margin: 0 auto;
     border-radius: 20px;
-    box-shadow: 3px 20px 62px -25px #000;
+    box-shadow: 3px 20px 62px -25px $black;
     transition: all 0.3s linear;
 
     &:hover {
@@ -41,7 +44,7 @@
         border: 1px solid transparent;
         border-radius: 10px;
         text-transform: uppercase;
-        color: #fff;
+        color: $white;
         cursor: pointer;
         transition: all 0.3s linear;
 

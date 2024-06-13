@@ -1,9 +1,14 @@
 .background {
     background-color: #003566;
-    height: calc(100vh - 100px - 100px);
-    overflow: auto;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    gap: 30px;
 }

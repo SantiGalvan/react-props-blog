@@ -2,6 +2,8 @@
 @use './_Header.scss';
 // MainCard
 @use './_MainCard.scss';
+// Variabili
+@use './_vars.scss' as *;
 
 * {
     box-sizing: border-box;
@@ -15,4 +17,16 @@ body {
 
 img {
     max-width: 100%;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: $white;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: $dark-gray;
 }
