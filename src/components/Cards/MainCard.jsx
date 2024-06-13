@@ -3,6 +3,7 @@ import Button from '../Button/Button';
 
 const MainCard = ({ post }) => {
     return (
+        post.published &&
         <div className="card">
             <figure>
                 <img src={post.image} alt={post.title} />
