@@ -1,8 +1,5 @@
 .background {
     background-color: #003566;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 100px;
 }
 
@@ -11,4 +8,5 @@
     flex-wrap: wrap;
     flex-shrink: 1;
     gap: 30px;
+    margin: 50px 0;
 }
