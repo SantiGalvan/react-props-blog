@@ -1,0 +1,9 @@
+.background {
+    background-color: #003566;
+    height: calc(100vh - 100px - 100px);
+    overflow: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

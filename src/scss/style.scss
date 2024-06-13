@@ -1,0 +1,18 @@
+// Header
+@use './_Header.scss';
+// MainCard
+@use './_MainCard.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poetsen One", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
