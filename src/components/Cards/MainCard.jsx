@@ -1,15 +1,15 @@
 import boat from '../../assets/img/boat.jpg';
 import Button from '../Button/Button';
 
-const MainCard = () => {
+const MainCard = ({ post }) => {
     return (
         <div className="card">
             <figure>
-                <img src={boat} alt="boat" />
+                <img src={post.image} alt={post.title} />
             </figure>
             <div className="card-body">
-                <h2>Titolo del post</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ducimus vitae hic accusantium non esse repellat blanditiis fuga suscipit autem illum, dolores labore cumque? Architecto delectus qui voluptatibus ullam corrupti!</p>
+                <h2>{post.title}</h2>
+                <p>{post.content}</p>
                 <Button />
             </div>
         </div>
