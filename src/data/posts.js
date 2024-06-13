@@ -1,82 +1,84 @@
-export const posts = [
-  {
-    id: 1,
-    title: "Recensione di The Last of Us Part II",
-    image: "https://picsum.photos/600/500.webp",
-    content: "The Last of Us Part II è un capolavoro narrativo che ti terrà incollato allo schermo. La storia intensa e le meccaniche di gioco raffinate fanno di questo gioco uno dei migliori della generazione.",
-    tags: ["Recensione", "The Last of Us", "PlayStation", "Naughty Dog"],
-    published: true
-  },
-  {
-    id: 2,
-    title: "Guida ai segreti di Red Dead Redemption 2",
-    image: "https://picsum.photos/500/500.webp",
-    content: "Scopri tutti i segreti e le Easter egg di Red Dead Redemption 2. Questa guida completa ti aiuterà a trovare tutto ciò che il selvaggio West ha da offrire.",
-    tags: ["Guida", "Red Dead Redemption 2", "Rockstar Games"],
-    published: true
-  },
-  {
-    id: 3,
-    title: "Analisi di Cyberpunk 2077: Cosa è andato storto?",
-    image: "https://picsum.photos/550/500.webp",
-    content: "Cyberpunk 2077 era uno dei giochi più attesi dell'anno, ma il suo lancio è stato segnato da numerosi problemi tecnici. Analizziamo cosa è andato storto e come CD Projekt sta cercando di rimediare.",
-    tags: ["Analisi", "Cyberpunk 2077", "CD Projekt"],
-    published: false
-  },
-  {
-    id: 4,
-    title: "I migliori giochi indie del 2023",
-    image: "https://picsum.photos/552/500.webp",
-    content: "Il 2023 è stato un anno eccezionale per i giochi indie. Ecco la nostra selezione dei migliori titoli indie che non puoi assolutamente perdere.",
-    tags: ["Classifica", "Giochi Indie", "2023"],
-    published: true
-  },
-  {
-    id: 5,
-    title: "Guida strategica per Animal Crossing: New Horizons",
-    image: "https://picsum.photos/555/500.webp",
-    content: "Animal Crossing: New Horizons è un gioco rilassante ma con molte cose da fare. Questa guida strategica ti aiuterà a gestire al meglio la tua isola.",
-    tags: ["Guida", "Animal Crossing", "Nintendo"],
-    published: true
-  },
-  {
-    id: 6,
-    title: "Le migliori armi in Call of Duty: Warzone",
-    image: "https://picsum.photos/560/500.webp",
-    content: "Scopri le migliori armi da usare in Call of Duty: Warzone per dominare il campo di battaglia. Ecco la nostra lista aggiornata con i consigli degli esperti.",
-    tags: ["Call of Duty", "Warzone", "Guida"],
-    published: true
-  },
-  {
-    id: 7,
-    title: "Recensione di Ghost of Tsushima",
-    image: "https://picsum.photos/577/500.webp",
-    content: "Ghost of Tsushima è un omaggio ai samurai e alla cultura giapponese. Con una grafica mozzafiato e un gameplay coinvolgente, questo gioco è un must per ogni appassionato.",
-    tags: ["Recensione", "Ghost of Tsushima", "PlayStation"],
-    published: true
-  },
-  {
-    id: 8,
-    title: "Top 10 giochi da non perdere su Nintendo Switch",
-    image: "https://picsum.photos/562/500.webp",
-    content: "La Nintendo Switch ha una vasta libreria di giochi fantastici. Ecco i 10 titoli che non puoi assolutamente perdere sulla console ibrida di Nintendo.",
-    tags: ["Classifica", "Nintendo Switch", "Giochi"],
-    published: true
-  },
-  {
-    id: 9,
-    title: "Come migliorare le tue abilità in Fortnite",
-    image: "https://picsum.photos/534/500.webp",
-    content: "Fortnite è un gioco competitivo che richiede abilità e strategia. Segui i nostri consigli per migliorare le tue performance e ottenere più vittorie.",
-    tags: ["Fortnite", "Guida", "Epic Games"],
-    published: true
-  },
-  {
-    id: 10,
-    title: "La storia di The Legend of Zelda: Breath of the Wild",
-    image: "https://picsum.photos/556/500.webp",
-    content: "The Legend of Zelda: Breath of the Wild ha rivoluzionato la serie con il suo mondo aperto e la sua narrativa coinvolgente. Riviviamo insieme la storia epica di questo capolavoro.",
-    tags: ["Zelda", "Breath of the Wild", "Nintendo", "Storia"],
-    published: false
-  }
-];
+export
+  const posts = [
+    {
+      id: 1,
+      title: "Introduzione a JavaScript",
+      content: "In questo articolo, esploreremo le basi di JavaScript, uno dei linguaggi di programmazione più popolari e versatili utilizzati oggi nel web development.",
+      image: "https://picsum.photos/600/500.webp",
+      tags: ["JavaScript", "Programmazione", "Web Development"],
+      published: true
+    },
+    {
+      id: 2,
+      title: "Guida Completa a CSS Flexbox",
+      image: "https://picsum.photos/500/500.webp",
+      content: "Flexbox è un potente modulo di layout CSS che ti permette di creare layout flessibili e responsivi con facilità. Questa guida completa ti mostrerà come utilizzarlo.",
+      tags: ["CSS", "Flexbox", "Web Design"],
+      published: true
+    },
+    {
+      id: 3,
+      title: "Come Utilizzare Git e GitHub",
+      image: "https://picsum.photos/550/500.webp",
+      content: "Git e GitHub sono strumenti essenziali per qualsiasi sviluppatore. In questo articolo, imparerai come iniziare a utilizzare questi strumenti per il controllo della versione e la collaborazione.",
+      tags: ["Git", "GitHub", "Version Control"],
+      published: false
+    },
+    {
+      id: 4,
+      image: "https://picsum.photos/552/500.webp",
+      title: "Sviluppo di API RESTful con Node.js e Express",
+      content: "Scopri come creare API RESTful utilizzando Node.js e Express, due delle tecnologie più popolari per lo sviluppo backend.",
+      tags: ["Node.js", "Express", "API"],
+      published: true
+    },
+    {
+      image: "https://picsum.photos/555/500.webp",
+      id: 5,
+      image: "https://picsum.photos/560/500.webp",
+      title: "Introduzione a TypeScript",
+      content: "TypeScript è un superset di JavaScript che aggiunge tipi statici e altre funzionalità. Questa guida introduttiva ti aiuterà a iniziare a usarlo nel tuo progetto.",
+      tags: ["TypeScript", "JavaScript", "Programmazione"],
+      published: true
+    },
+    {
+      id: 6,
+      title: "Creare Applicazioni Web con React",
+      content: "React è una libreria JavaScript per la creazione di interfacce utente. Questo articolo ti guiderà attraverso i passaggi necessari per iniziare a sviluppare con React.",
+      tags: ["React", "JavaScript", "Web Development"],
+      image: "https://picsum.photos/577/500.webp",
+      published: true
+    },
+    {
+      id: 7,
+      title: "Sviluppo di Applicazioni Mobili con React Native",
+      content: "React Native ti permette di creare app mobili utilizzando JavaScript e React. Scopri come iniziare a sviluppare applicazioni native con questa potente libreria.",
+      tags: ["React Native", "Mobile Development", "JavaScript"],
+      image: "https://picsum.photos/562/500.webp",
+      published: false
+    },
+    {
+      id: 8,
+      title: "Una Guida Completa a SQL per Principianti",
+      content: "SQL è un linguaggio essenziale per interagire con i database. In questa guida completa, imparerai le basi di SQL e come utilizzarlo per gestire i dati.",
+      image: "https://picsum.photos/534/500.webp",
+      tags: ["SQL", "Database", "Programmazione"],
+      published: true
+    },
+    {
+      id: 9,
+      title: "Scopri le Novità di Python 3.9",
+      image: "https://picsum.photos/556/500.webp",
+      content: "Python 3.9 introduce numerose nuove funzionalità e miglioramenti. Questo articolo esplora le principali novità di questa versione.",
+      tags: ["Python", "Programmazione", "Novità"],
+      published: true
+    },
+    {
+      id: 10,
+      title: "Introduzione a Docker per Sviluppatori",
+      image: "https://picsum.photos/564/500.webp",
+      content: "Docker è uno strumento fondamentale per la creazione e gestione di container. Scopri come iniziare a utilizzare Docker per sviluppare e distribuire le tue applicazioni.",
+      tags: ["Docker", "DevOps", "Programmazione"],
+      published: true
+    }
+  ];
