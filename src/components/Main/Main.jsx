@@ -21,9 +21,29 @@ const tagColors = {
     "DevOps": "#16A085"
 }
 
+const onlyTags = () => {
+    let stringTags = ''
+    posts.forEach(post => {
+        const tag = post.tags.map(tag => tag);
+        stringTags += `${tag},`
+    });
+
+    const arrayTags = stringTags.split(',');
+
+    const tags = [];
+    arrayTags.forEach(tag => {
+        if (!tags.includes(tag)) tags.push(tag);
+    })
+
+    return tags;
+}
+
 const Main = () => {
     return (
         <main className={mainStyle.background}>
+            <section className={mainStyle.row}>
+                {onlyTags().map((tag, i) => <Badge tagColors={tagColors} key={i} tag={tag} style={{ backgroundColor: tagColors[tag] }} >{tag}</Badge>)}
+            </section>
             <section className={mainStyle.row}>
                 {posts.map(post => <MainCard key={post.id}
                     title={post.title}
@@ -33,9 +53,6 @@ const Main = () => {
                     published={post.published}
                     tagColors={tagColors}
                 />)}
-            </section>
-            <section className={mainStyle.row}>
-                {posts.map(post => post.tags.map((tag, i) => <Badge tagColors={tagColors} key={i} tag={tag} style={{ backgroundColor: tagColors[tag] }} >{tag}</Badge>))}
             </section>
         </main>
     );
